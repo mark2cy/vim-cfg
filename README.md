@@ -15,7 +15,7 @@ git stash pot
 git branch -a 
     * check your current branch status
 
-git branch <New branch name>
+git branch -b <New branch name>
     * Crete a new branch, this will copy from current branch
 
 git checkout <New branch name>
@@ -33,3 +33,8 @@ git pus --set-upstream origin <new branch name>
 ** this line : in stage..
 ** this line : unstage
 *** in new branch, stash pop will get 'unstage' contnts.
+
+
+** test to create a branch from command line.
+** this branch named '20220529-vim-tet2
+
