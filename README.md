@@ -26,3 +26,10 @@ git add .
 
 git pus --set-upstream origin <new branch name>
     * push changes, settings the new branch to root of the repo.
+
+
+** stash test...
+** create a new 20220528 branch, and 'pop' those message to new branch.
+** this line : in stage..
+** this line : unstage
+*** in new branch, stash pop will get 'unstage' contnts.
