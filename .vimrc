@@ -229,9 +229,19 @@ map <F11> :MBEbp<CR> " previous buffer
 map <F12> :MBEbn<CR> " next
 
 "---------GIT SETTINGS--------------
+"jump to next hunk (change) : ]c
+"jump to previous hunk (change): [c
+"do mapping :
+"nmap ]h <Plug>(GitGutterNextHunk)
+"nmap [h <Plug>(GitGutterPrevHunk)
+"<leader>hp : hunk preview
+"<leader>hs : hunk stage
+"<leader>hu : hunk undo
 hi clear SignColumn
-let g:airline#extensions#hunks#non_zero_only = 0
+let g:airline#extensions#hunks#non_zero_only = 1
 set updatetime=500
+let g:gitgutter_show_msg_on_hunk_jumping = 1  "turn on/off the hunk message
+
 
 let g:gitgutter_sign_added = '+'
 let g:gitgutter_sign_modified ='~'
